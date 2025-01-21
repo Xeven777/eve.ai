@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Shield, Sparkles } from "lucide-react";
+import { Heart, MessageSquare, Shield, Sparkles } from "lucide-react";
 
-// import { Card } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
+import Navbar from "./components/Navbar";
 const features = [
   {
     icon: <MessageSquare className="w-10 h-10" />,
@@ -25,16 +26,19 @@ const features = [
 
 const App = () => {
   return (
-    <main>
-      <section className="min-h-svh flex flex-col items-center justify-center px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br -z-10 from-primary/5 via-background to-accent/5" />
-
-        <div className="size-32 -z-10 bg-primary rounded-full absolute blur-3xl" />
-        <h1 className="text-4xl md:text-6xl lg:text-7xl serif text-center font-medium tracking-tight mb-6">
+    <main className="relative">
+      <Navbar />
+      <section className="min-h-svh flex flex-col items-center px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br -z-10 from-primary/15 via-background to-accent/5" />
+        {/* <div className="absolute top-0 h-svh w-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,hsl(340,100,75,0.3),rgba(255,255,255,0))] opacity-65 brightness-200"></div> */}
+        <div className="absolute -z-10 -inset-2.5 bg-[linear-gradient(to_right,#f2f2f2_1px,transparent_1px),linear-gradient(to_bottom,#f2f2f2_1px,transparent_1px)] bg-[size:6rem_4rem] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+        <div className="size-32 -z-10 bg-primary/30 rounded-full absolute blur-3xl" />
+        <h1 className="text-4xl md:text-6xl lg:text-7xl serif mt-32 md:mt-44 text-center font-medium tracking-tighter mb-6 motion-preset-slide-right motion-duration-1000 motion-preset-fade">
           Reconnect with the Ones You Miss
         </h1>
+        <Heart className="absolute size-52 bottom-0 fill-primary/10 stroke-none z-10 motion-preset-fade " />
 
-        <p className="text-lg md:text-xl text-center max-w-2xl mb-8 text-muted-foreground">
+        <p className="text-lg md:text-xl text-center max-w-2xl mb-8 text-muted-foreground motion-preset-fade motion-duration-2000">
           Transform your cherished chat histories into interactive conversations
           that capture their unique personality, tone, and style.
         </p>
@@ -92,7 +96,7 @@ const App = () => {
             Preserve Their Voice
           </h2>
 
-          {/* <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card
                 key={index}
@@ -106,7 +110,7 @@ const App = () => {
                 <p className="text-muted-foreground">{feature.description}</p>
               </Card>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
     </main>

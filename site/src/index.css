@@ -17,71 +17,40 @@ body {
 
 .serif {
   font-family: 
-  /* "Libre Caslon Display",  */
-  "Crimson Text",
-    /* "Playfair Display", */
-    
-    "Instrument Serif", serif;
+  /* "Libre Caslon Display",  */ "Crimson Text",
+    /* "Playfair Display", */ "Instrument Serif", serif;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
-    --background: 45 39% 99%;
-    --foreground: 45 70% 0%;
-    --muted: 165 18% 85%;
-    --muted-foreground: 165 7% 36%;
-    --popover: 45 39% 99%;
-    --popover-foreground: 45 70% 0%;
-    --card: 45 39% 99%;
-    --card-foreground: 45 70% 0%;
-    --border: 45 7% 91%;
-    --input: 45 7% 91%;
-    --primary: 341.47 100% 62.55%;
-    --primary-foreground: 45 0% 100%;
-    --secondary: 187.9 84.74% 53.62%;
-    --secondary-foreground: 165 0% 100%;
-    --accent: 285 100% 88%;
-    --accent-foreground: 285 100% 28%;
-    --destructive: 0 94.71% 39.03%;
-    --destructive-foreground: 0 0% 100%;
-    --ring: 45 100% 88%;
-    --chart-1: 45 100% 88%;
-    --chart-2: 165 100% 88%;
-    --chart-3: 285 100% 88%;
-    --chart-4: 165 100% 91%;
-    --chart-5: 45 103% 88%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 45 52% 0%;
-    --foreground: 45 22% 99%;
-    --muted: 165 18% 15%;
-    --muted-foreground: 165 7% 64%;
-    --popover: 45 52% 0%;
-    --popover-foreground: 45 22% 99%;
-    --card: 45 52% 0%;
-    --card-foreground: 45 22% 99%;
-    --border: 45 7% 13%;
-    --input: 45 7% 13%;
-    --primary: 45 100% 88%;
-    --primary-foreground: 45 100% 8%;
-    --secondary: 165 100% 88%;
-    --secondary-foreground: 165 100% 8%;
-    --accent: 285 100% 88%;
-    --accent-foreground: 285 100% 28%;
-    --destructive: 22 89% 48%;
-    --destructive-foreground: 0 0% 100%;
-    --ring: 45 100% 88%;
-    --chart-1: 45 100% 88%;
-    --chart-2: 165 100% 88%;
-    --chart-3: 285 100% 88%;
-    --chart-4: 165 100% 91%;
-    --chart-5: 45 103% 88%;
+    --background: 0 0% 98%; /* Light background */
+    --foreground: 0 0% 20%; /* Dark text */
+    --muted: 0 0% 90%; /* Soft muted tones */
+    --muted-foreground: 0 0% 40%; /* Muted text */
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 20%;
+    --card: 0 0% 98%; /* Light card background */
+    --card-foreground: 0 0% 20%; /* Dark card text */
+    --border: 0 0% 90%; /* Light borders */
+    --input: 0 0% 90%; /* Input field background */
+    --primary: 340 100% 75%; /* Pink tones */
+    --primary-foreground: 0 0% 100%; /* White text */
+    --secondary: 40 100% 70%; /* Yellow tones */
+    --secondary-foreground: 0 0% 100%; /* White text */
+    --accent: 200 100% 80%; /* Soft blue */
+    --accent-foreground: 200 100% 30%; /* Blue text */
+    --destructive: 0 85% 55%; /* Red for warnings */
+    --destructive-foreground: 0 0% 100%; /* White text */
+    --ring: 340 100% 85%; /* Pink ring for focus */
+    --chart-1: 340 100% 85%; /* Chart color 1 */
+    --chart-2: 40 100% 80%; /* Chart color 2 */
+    --chart-3: 200 100% 85%; /* Chart color 3 */
+    --chart-4: 40 100% 90%; /* Chart color 4 */
+    --chart-5: 340 100% 85%; /* Chart color 5 */
+    --radius: 1.1rem; /* Border radius */
   }
 }
 
