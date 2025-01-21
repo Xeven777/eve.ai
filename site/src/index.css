@@ -1,42 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Instrument+Serif:ital@0;1&family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.serif {
+  font-family: 
+  /* "Libre Caslon Display",  */
+  "Crimson Text",
+    /* "Playfair Display", */
+    
+    "Instrument Serif", serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --background: 45 39% 99%;
+    --foreground: 45 70% 0%;
+    --muted: 165 18% 85%;
+    --muted-foreground: 165 7% 36%;
+    --popover: 45 39% 99%;
+    --popover-foreground: 45 70% 0%;
+    --card: 45 39% 99%;
+    --card-foreground: 45 70% 0%;
+    --border: 45 7% 91%;
+    --input: 45 7% 91%;
+    --primary: 341.47 100% 62.55%;
+    --primary-foreground: 45 0% 100%;
+    --secondary: 187.9 84.74% 53.62%;
+    --secondary-foreground: 165 0% 100%;
+    --accent: 285 100% 88%;
+    --accent-foreground: 285 100% 28%;
+    --destructive: 0 94.71% 39.03%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 45 100% 88%;
+    --chart-1: 45 100% 88%;
+    --chart-2: 165 100% 88%;
+    --chart-3: 285 100% 88%;
+    --chart-4: 165 100% 91%;
+    --chart-5: 45 103% 88%;
     --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 45 52% 0%;
+    --foreground: 45 22% 99%;
+    --muted: 165 18% 15%;
+    --muted-foreground: 165 7% 64%;
+    --popover: 45 52% 0%;
+    --popover-foreground: 45 22% 99%;
+    --card: 45 52% 0%;
+    --card-foreground: 45 22% 99%;
+    --border: 45 7% 13%;
+    --input: 45 7% 13%;
+    --primary: 45 100% 88%;
+    --primary-foreground: 45 100% 8%;
+    --secondary: 165 100% 88%;
+    --secondary-foreground: 165 100% 8%;
+    --accent: 285 100% 88%;
+    --accent-foreground: 285 100% 28%;
+    --destructive: 22 89% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 45 100% 88%;
+    --chart-1: 45 100% 88%;
+    --chart-2: 165 100% 88%;
+    --chart-3: 285 100% 88%;
+    --chart-4: 165 100% 91%;
+    --chart-5: 45 103% 88%;
   }
 }
 
