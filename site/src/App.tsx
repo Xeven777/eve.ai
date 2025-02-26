@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Heart, MessageSquare, Shield, Sparkles } from "lucide-react";
-
+import { MessageSquare, Shield, Sparkles } from "lucide-react";
+import img1 from "@/assets/generated-image(18).jpeg";
+import img2 from "@/assets/image-11.webp";
+import img3 from "@/assets/image-12.webp";
 import { Card } from "@/components/ui/card";
+import Floating, {
+  FloatingElement,
+} from "@/fancy/components/image/parallax-floating";
+
 import Navbar from "./components/Navbar";
+import StitchesButton from "./components/stichesBtn";
+import { SparklesText } from "./components/SparkleText";
 const features = [
   {
     icon: <MessageSquare className="w-10 h-10" />,
@@ -28,29 +36,67 @@ const App = () => {
   return (
     <main className="relative">
       <Navbar />
-      <section className="min-h-svh flex flex-col items-center px-4 relative overflow-hidden">
+      <Floating className="flex flex-col items-center px-4 relative overflow-hidden pb-96">
         <div className="absolute inset-0 bg-gradient-to-br -z-10 from-primary/15 via-background to-accent/5" />
-        {/* <div className="absolute top-0 h-svh w-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,hsl(340,100,75,0.3),rgba(255,255,255,0))] opacity-65 brightness-200"></div> */}
         <div className="absolute -z-10 -inset-2.5 bg-[linear-gradient(to_right,#f2f2f2_1px,transparent_1px),linear-gradient(to_bottom,#f2f2f2_1px,transparent_1px)] bg-[size:6rem_4rem] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
         <div className="size-32 -z-10 bg-primary/30 rounded-full absolute blur-3xl" />
-        <h1 className="text-4xl md:text-6xl lg:text-7xl serif mt-32 md:mt-44 text-center font-medium tracking-tighter mb-6 motion-preset-slide-right motion-duration-1000 motion-preset-fade">
-          Reconnect with the Ones You Miss
+        <h1 className="text-4xl md:text-6xl lg:text-8xl serif mt-32 md:mt-40 text-center font-medium tracking-tighter mb-6 motion-duration-1000 motion-preset-blur-up pointer-events-none">
+          Reconnect with the
+          <SparklesText
+            className="bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text italic font-light"
+            text="Ones"
+          />
+          <br />
+          you
+          <span className="font-medium px-4 bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text italic">
+            miss
+          </span>
+          the most
         </h1>
-        <Heart className="absolute size-52 bottom-0 fill-primary/10 stroke-none z-10 motion-preset-fade " />
 
-        <p className="text-lg md:text-xl text-center max-w-2xl mb-8 text-muted-foreground motion-preset-fade motion-duration-2000">
+        <p className="text-lg pointer-events-none md:text-xl text-center max-w-2xl mb-8 text-muted-foreground motion-duration-1000 motion-preset-blur-up">
           Transform your cherished chat histories into interactive conversations
           that capture their unique personality, tone, and style.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button size="lg">Get Started</Button>
+          <StitchesButton>Get Started</StitchesButton>
 
           <Button size="lg" variant="outline">
             Learn More
           </Button>
         </div>
-      </section>
+        <FloatingElement depth={1.5} className="absolute bottom-28 left-24">
+          <div className="border-2 rounded-md border-pink-300 border-dashed p-2 overflow-hidden shadow-xl cursor-pointer motion-duration-1500 motion-preset-blur-right-lg -rotate-12">
+            <img
+              src={img1}
+              alt="img"
+              className="rounded-md mb-8 object-cover size-60"
+            />
+          </div>
+        </FloatingElement>
+
+        <FloatingElement depth={0.7} className="absolute bottom-16">
+          <div className="border-2 rounded-md border-pink-300 border-dashed p-2 overflow-hidden shadow-xl cursor-pointer motion-duration-2000 motion-preset-blur-left-lg rotate-2">
+            <img
+              src={img3}
+              alt="img"
+              className="rounded-md mb-8 object-cover size-60"
+            />
+          </div>
+        </FloatingElement>
+
+        <FloatingElement depth={1.4} className="absolute bottom-32 right-24">
+          <div className="border-2 rounded-md border-pink-300 border-dashed p-2 overflow-hidden shadow-xl cursor-pointer motion-duration-2000 motion-preset-blur-left-lg rotate-12">
+            <img
+              src={img2}
+              alt="img"
+              className="rounded-md mb-8 object-cover size-60"
+            />
+          </div>
+        </FloatingElement>
+      </Floating>
+
       <section className="py-20 px-4">
         <div className="container max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
