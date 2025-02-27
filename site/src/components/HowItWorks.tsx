@@ -34,7 +34,7 @@ const HowItWorks = () => {
       opacity: 1,
       transition: {
         staggerChildren: 1,
-        delayChildren: 0.7,
+        delayChildren: 0.4,
       },
     },
   };
