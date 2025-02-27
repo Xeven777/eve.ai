@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Instrument+Serif:ital@0;1&family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,9 +16,7 @@ body {
 }
 
 .serif {
-  font-family: 
-  /* "Libre Caslon Display",  */ "Crimson Text",
-    /* "Playfair Display", */ "Instrument Serif", serif;
+  font-family: "Crimson Text", serif;
 }
 
 @tailwind base;
@@ -61,4 +59,14 @@ body {
   body {
     @apply bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent) / 0.6);
+  border-radius: 3px;
 }
