@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Github, Twitter, Instagram, Linkedin, Heart } from "lucide-react";
 
 const footerLinks = [
