@@ -69,7 +69,7 @@ const Features = () => {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-3 gap-8"
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"
           variants={container}
           initial="hidden"
           whileInView="show"

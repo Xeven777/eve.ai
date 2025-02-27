@@ -4,6 +4,7 @@ import React, { Suspense } from "react";
 
 const HowItWorks = React.lazy(() => import("./components/HowItWorks"));
 const Features = React.lazy(() => import("./components/Features"));
+const Footer = React.lazy(() => import("./components/Footer"));
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
       </Suspense>
       <Suspense>
         <Features />
+      </Suspense>
+      <Suspense>
+        <Footer />
       </Suspense>
     </main>
   );
