@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: "Montserrat", Arial, sans-serif;
 }
 
@@ -69,4 +71,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--accent) / 0.6);
   border-radius: 3px;
+}
+
+pre,
+code {
+  font-family: "Jetbrains Mono", monospace;
 }

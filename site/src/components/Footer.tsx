@@ -31,22 +31,22 @@ const footerLinks = [
 const socialLinks = [
   {
     icon: <Github className="h-5 w-5" />,
-    href: "https://github.com",
+    href: "https://github.com/xeven777",
     label: "GitHub",
   },
   {
     icon: <Twitter className="h-5 w-5" />,
-    href: "https://twitter.com",
+    href: "https://x.com/xevenbiswas",
     label: "Twitter",
   },
   {
     icon: <Instagram className="h-5 w-5" />,
-    href: "https://instagram.com",
+    href: "https://instagram.com/anish_biswas_7_",
     label: "Instagram",
   },
   {
     icon: <Linkedin className="h-5 w-5" />,
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/anishbiswas777",
     label: "LinkedIn",
   },
 ];

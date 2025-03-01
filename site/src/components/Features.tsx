@@ -47,7 +47,7 @@ const Features = () => {
   };
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden">
+    <section className="py-24 px-4 relative overflow-hidden" id="features">
       {/* Decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-40 right-5 w-72 h-72 bg-primary/40 rounded-full blur-3xl" />

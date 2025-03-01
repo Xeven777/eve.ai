@@ -5,6 +5,7 @@ import CustomCursor from "./components/ui/Cursor";
 import ReactLenis from "lenis/react";
 
 const HowItWorks = React.lazy(() => import("./components/HowItWorks"));
+const HowToSetup = React.lazy(() => import("./components/HowToSetup"));
 const Features = React.lazy(() => import("./components/Features"));
 const Footer = React.lazy(() => import("./components/Footer"));
 
@@ -18,6 +19,9 @@ const App = () => {
 
         <Suspense>
           <HowItWorks />
+        </Suspense>
+        <Suspense>
+          <HowToSetup />
         </Suspense>
         <Suspense>
           <Features />
