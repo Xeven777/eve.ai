@@ -5,7 +5,7 @@ const CustomCursor = () => {
   const cursorRef = useRef<HTMLImageElement>(null);
   const rafId = useRef<number>(null);
   const lastUpdateTime = useRef<number>(0);
-  const THROTTLE_MS = 10;
+  const THROTTLE_MS = 7;
 
   const updatePosition = useCallback((clientX: number, clientY: number) => {
     const now = performance.now();
@@ -37,7 +37,20 @@ const CustomCursor = () => {
     // Initial position
     setPosition({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
 
+    // Create and inject global CSS to hide the default cursor
+    const style = document.createElement("style");
+    style.textContent = `
+      * {
+        cursor: none !important;
+      }
+      ::selection {
+        cursor: none !important;
+      }
+    `;
+    document.head.appendChild(style);
+
     window.addEventListener("mousemove", handleMouseMove);
+
     document.body.style.cursor = "none";
 
     // Set up hover effects for interactive elements
@@ -66,6 +79,7 @@ const CustomCursor = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       document.body.style.cursor = "auto";
+      document.head.removeChild(style); // Clean up the style element
       if (rafId.current) {
         cancelAnimationFrame(rafId.current);
       }

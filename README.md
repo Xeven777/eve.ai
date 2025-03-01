@@ -101,7 +101,7 @@ POST /chat
 Content-Type: application/json
 
 {
-  "question": "How's your day going?"
+  "question": "Ei, ki korchis?"
 }
 ```
 
@@ -109,7 +109,7 @@ Response:
 
 ```json
 {
-  "answer": "Ekdom moja korchi ajke! Office er kaj shesh kore ektu cooking niye busy chilam. Tui bol, tor ki hocche?"
+  "answer": "Ei kaj shesh kore ektu cooking niye busy chilam😆. Tui bol, tui ki korchis?"
 }
 ```
 

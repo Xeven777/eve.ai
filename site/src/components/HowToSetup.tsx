@@ -122,7 +122,7 @@ const HowToSetup = () => {
           <h2 className="text-4xl font-bold tracking-tight mb-4">
             Setup Guide
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-base px-2 max-w-2xl mx-auto">
             Get started with EVE.AI in minutes. Follow these simple steps to
             create a personalized AI chat experience that feels just like
             talking to a friend.
@@ -148,7 +148,9 @@ const HowToSetup = () => {
                       >
                         <Github className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>Clone the Repository</span>
+                      <span className="font-semibold tracking-tight">
+                        Clone the Repository
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Start by cloning the EVE.AI repository to your local
@@ -165,7 +167,9 @@ const HowToSetup = () => {
                       >
                         <Cog className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>Environment Setup</span>
+                      <span className="font-semibold tracking-tight">
+                        Environment Setup
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Create a <code>.env</code> file in the root directory with
@@ -182,7 +186,9 @@ const HowToSetup = () => {
                       >
                         <Terminal className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>Install Dependencies</span>
+                      <span className="font-semibold tracking-tight">
+                        Install Dependencies
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Install required packages using your preferred package
@@ -211,7 +217,9 @@ const HowToSetup = () => {
                       >
                         <FileCode className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>Process Chat Data</span>
+                      <span className="font-semibold tracking-tight">
+                        Process Chat Data
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Export your WhatsApp chat and place it in the api
@@ -228,7 +236,9 @@ const HowToSetup = () => {
                       >
                         <Database className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>Seed Vector Database</span>
+                      <span className="font-semibold tracking-tight">
+                        Seed Vector Database
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Ensure your Pinecone database is set up, then run: 🧠
@@ -244,7 +254,9 @@ const HowToSetup = () => {
                       >
                         <Terminal className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>Start the API Server</span>
+                      <span className="font-semibold tracking-tight">
+                        Start the API Server
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Launch the API server to start using your personalized
@@ -261,7 +273,9 @@ const HowToSetup = () => {
                       >
                         <MessageSquare className="size-5 mr-1 text-primary" />
                       </motion.div>
-                      <span>API Usage</span>
+                      <span className="font-semibold tracking-tight">
+                        API Usage
+                      </span>
                     </div>
                     <div className="step-description mb-4">
                       Make a POST request to the chat endpoint 💬

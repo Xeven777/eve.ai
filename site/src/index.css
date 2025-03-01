@@ -16,6 +16,26 @@ body {
   scroll-behavior: smooth;
   font-family: "Montserrat", Arial, sans-serif;
 }
+* {
+  cursor: none !important;
+}
+
+::selection {
+  cursor: none !important;
+}
+
+::-moz-selection {
+  cursor: none !important;
+}
+
+input,
+textarea,
+button,
+a,
+select,
+[role="button"] {
+  cursor: none !important;
+}
 
 .serif {
   font-family: "Crimson Text", serif;

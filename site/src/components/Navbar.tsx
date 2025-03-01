@@ -8,10 +8,14 @@ const Navbar = () => {
           EveAI
         </h2>
       </div>
-      <div className="flex gap-16 ">
-        <a href="#setup">Setup</a>
+      <div className="flex gap-16 font-medium md:block hidden">
+        <a className=" hover:text-primary hover:underline" href="#setup">
+          Setup
+        </a>
 
-        <a href="#features">Features</a>
+        <a className=" hover:text-primary hover:underline" href="#features">
+          Features
+        </a>
       </div>
       <a
         href="https://github.com/Xeven777/eve.ai"

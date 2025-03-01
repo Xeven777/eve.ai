@@ -9,22 +9,22 @@ const HowItWorks = () => {
 
   const messages = [
     {
-      text: "Hey! Remember that time we went hiking in the rain? 🌧️",
+      text: "Oii, ki korchiss tui? 😁",
       sender: "user",
       avatar: "👤",
     },
     {
-      text: "Of course! We were completely soaked but couldn't stop laughing 😄",
+      text: "Ei toh just ghum theke utlam😪",
       sender: "assistant",
       avatar: "🤖",
     },
     {
-      text: "And you said এই বৃষ্টি তো থামার নাম-ই নিচ্ছে না!",
+      text: "Haha lol! Ei khane hebbi bristi porche! 🌧️",
       sender: "user",
       avatar: "👤",
     },
     {
-      text: "Haha yes! That's exactly how I would say it - mixing Bengali and English 💫",
+      text: "Damnn!🌧️😭 I miss rain so much!",
       sender: "assistant",
       avatar: "🤖",
     },
