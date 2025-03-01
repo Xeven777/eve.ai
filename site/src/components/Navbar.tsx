@@ -8,7 +8,7 @@ const Navbar = () => {
           EveAI
         </h2>
       </div>
-      <div className="flex gap-16 font-medium md:block hidden">
+      <div className="gap-16 font-medium md:block hidden">
         <a className=" hover:text-primary hover:underline" href="#setup">
           Setup
         </a>
