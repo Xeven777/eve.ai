@@ -8,25 +8,32 @@ const Navbar = () => {
           EveAI
         </h2>
       </div>
-      <div className="gap-16 font-medium md:block hidden">
-        <a className=" hover:text-primary hover:underline" href="#setup">
+
+      <div className="gap-6 font-medium flex items-center">
+        <a
+          className="hidden md:block hover:text-primary hover:underline opacity-80"
+          href="#setup"
+        >
           Setup
         </a>
 
-        <a className=" hover:text-primary hover:underline" href="#features">
+        <a
+          className="hidden md:block hover:text-primary hover:underline opacity-80"
+          href="#features"
+        >
           Features
         </a>
+        <a
+          href="https://github.com/Xeven777/eve.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-b-2 border-l-2 border-r-2 border-primary bg-gradient-to-tr from-primary to-pink-500 px-4 py-1.5 text-white shadow-md transition duration-300 active:translate-y-0.5 active:border-primary active:shadow-none">
+            <span className="absolute h-0 w-0 rounded-full bg-white opacity-10 transition-all duration-300 ease-out group-hover:h-32 group-hover:w-32"></span>
+            <span className="relative font-medium tracking-tight">Github</span>
+          </button>
+        </a>
       </div>
-      <a
-        href="https://github.com/Xeven777/eve.ai"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button className="group relative m-1 inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-b-2 border-l-2 border-r-2 border-primary bg-gradient-to-tr from-primary to-pink-500 px-4 py-1.5 text-white shadow-md transition duration-300 active:translate-y-0.5 active:border-primary active:shadow-none">
-          <span className="absolute h-0 w-0 rounded-full bg-white opacity-10 transition-all duration-300 ease-out group-hover:h-32 group-hover:w-32"></span>
-          <span className="relative font-medium tracking-tight">Github</span>
-        </button>
-      </a>
     </div>
   );
 };
