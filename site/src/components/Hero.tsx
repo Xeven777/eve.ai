@@ -4,6 +4,9 @@ import img2 from "@/assets/image-11.webp";
 import img3 from "@/assets/image-12.webp";
 import img4 from "@/assets/hearts-5947464_1280.png";
 import img5 from "@/assets/hands.svg";
+import cherryBlossom from "@/assets/cherry blossom-cuate.svg";
+import cherryBlossom2 from "@/assets/cherry blossom-pana.svg";
+
 import Floating, {
   FloatingElement,
 } from "@/fancy/components/image/parallax-floating";
@@ -45,7 +48,7 @@ const Hero = () => {
       {/* Top floating elements - hidden on mobile, visible from medium screens */}
       <FloatingElement
         depth={0.8}
-        className="absolute top-20 left-12 hidden md:block"
+        className="absolute top-40 left-12 hidden md:block"
       >
         <img
           src={img4}
@@ -56,7 +59,7 @@ const Hero = () => {
 
       <FloatingElement
         depth={0.8}
-        className="absolute top-16 right-10 hidden md:block"
+        className="absolute top-32 right-10 hidden md:block"
       >
         <img
           src={img5}
@@ -103,6 +106,17 @@ const Hero = () => {
           />
         </div>
       </FloatingElement>
+
+      <img
+        src={cherryBlossom}
+        alt=""
+        className="absolute top-0 left-0 w-36 -z-10 h-auto hidden md:block"
+      />
+      <img
+        src={cherryBlossom2}
+        alt=""
+        className="absolute top-4 right-0 w-36 -z-10 hidden md:block"
+      />
     </Floating>
   );
 };
