@@ -1,5 +1,7 @@
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import cherryBlossom from "@/assets/cherry blossom-cuate.svg";
+import cherryBlossom2 from "@/assets/cherry blossom-pana.svg";
 
 const HowItWorks = () => {
   const ref = useRef(null);
@@ -53,7 +55,17 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 relative">
+      <img
+        src={cherryBlossom}
+        alt=""
+        className="absolute top-20 left-0 w-36 -z-10 h-auto hidden md:block"
+      />
+      <img
+        src={cherryBlossom2}
+        alt=""
+        className="absolute bottom-44 right-0 w-36 -z-10 hidden md:block"
+      />
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-6xl motion-duration-2000 motion-preset-slide-up-md serif text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-600 to-blue-400 tracking-tighter font-medium italic">
           See How It Works
