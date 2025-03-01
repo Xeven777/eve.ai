@@ -10,16 +10,8 @@ To train Eve.AI with your WhatsApp conversations, you'll need to export your cha
 2. **Tap the three dots** (⋮) in the top right corner
 3. Select **More**
 4. Choose **Export chat**
-5. Select **Without Media** (recommended for faster processing and better results)
+5. Select **Without Media**
 6. Choose how you want to share the file (email to yourself, cloud storage, etc.)
-
-### For Group Chats:
-
-1. **Open the group chat**
-2. **Tap the group name** at the top to open group info
-3. Scroll down and tap **Export chat**
-4. Select **Without Media**
-5. Choose how you want to share the file
 
 ## Exporting from WhatsApp Web/Desktop:
 

@@ -6,7 +6,7 @@ import { TaskType } from "@google/generative-ai";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { createRetrievalChain } from "langchain/chains/retrieval";
-import { ChatGroq } from "@langchain/groq";
+// import { ChatGroq } from "@langchain/groq";
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";

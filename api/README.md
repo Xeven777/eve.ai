@@ -65,7 +65,7 @@ The API retrieves relevant messages and generates personalized responses:
 2. **Install Dependencies**
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Export and Process Chat Data**

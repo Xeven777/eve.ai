@@ -15,7 +15,7 @@ async function seedData() {
   console.log("Data loaded successfully");
 
   const splitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 1000,
+    chunkSize: 2000,
     chunkOverlap: 50,
   });
 
