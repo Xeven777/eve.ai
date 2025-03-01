@@ -1,9 +1,13 @@
 const Navbar = () => {
   return (
     <div className="fixed left-1/2 border border-border/40 backdrop-blur-lg bg-background/30 rounded-full z-50 -translate-x-1/2 px-4 md:px-10 py-1 bg top-1 w-full mx-auto max-w-6xl flex items-center justify-between shadow-sm">
-      <h2 className="font-semibold bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-        EveAI
-      </h2>
+      <div className="flex items-center gap-2">
+        <div className="rounded-full size-9 bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-200"></div>
+
+        <h2 className="font-semibold bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-xl tracking-tight text-transparent">
+          EveAI
+        </h2>
+      </div>
       <div className="flex gap-16 ">
         <a href="#setup">Setup</a>
 

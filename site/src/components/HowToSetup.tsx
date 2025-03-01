@@ -93,7 +93,7 @@ const apiResponseExample = `{
 const HowToSetup = () => {
   return (
     <section
-      className="py-24 rounded-3xl bg-gradient-to-b from-accent/5 to-secondary/20"
+      className="py-24 rounded-xxl bg-gradient-to-b from-accent/5 to-secondary/20"
       id="setup"
     >
       <motion.div

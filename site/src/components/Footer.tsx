@@ -53,7 +53,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/30 border-t rounded-t-3xl relative overflow-hidden">
+    <footer className="bg-muted/30 border-t rounded-t-xxl relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
@@ -69,7 +69,8 @@ const Footer = () => {
             viewport={{ once: true }}
             className="col-span-2 md:col-span-3"
           >
-            <div className="mb-4">
+            <div className="mb-4 flex gap-2 items-center">
+              <div className="rounded-full size-8 bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-200"></div>
               <h3 className="font-serif text-2xl bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
                 Eve.ai
               </h3>
