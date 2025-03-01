@@ -67,10 +67,10 @@ export function purifyWhatsAppChat(rawChat: string) {
   };
 }
 
-const filePath = path.join(__dirname, "demochat.txt");
+const filePath = path.join(__dirname, "demochat.txt"); // Path to your chat file. Change this to your chat file path.
 const rawChat = fs.readFileSync(filePath, "utf-8");
 const purifiedChat = purifyWhatsAppChat(rawChat);
 fs.writeFileSync(
-    path.join(__dirname, "purified-chat.json"),
-    JSON.stringify(purifiedChat, null, 2)
+  path.join(__dirname, "purified-chat.json"),
+  JSON.stringify(purifiedChat, null, 2)
 );
