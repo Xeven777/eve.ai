@@ -1,14 +1,14 @@
-# Eve.AI - Personalized Chat AI
+# 🤖 Eve.AI - Personalized Chat AI
 
 Eve.AI is a system that learns communication patterns from WhatsApp chat history and creates a personalized AI chat experience that mimics a specific person's unique communication style, language patterns, and personality.
 
 The system consists of three main components:
 
-1. **Data Processing Pipeline**: Cleanses and structures raw WhatsApp chat exports
-2. **Vector Database**: Stores conversations for semantic retrieval
-3. **API Server**: Handles chat requests and generates personalized responses
+1. **🧹 Data Processing Pipeline**: Cleanses and structures raw WhatsApp chat exports
+2. **🧠 Vector Database**: Stores conversations for semantic retrieval
+3. **⚙️ API Server**: Handles chat requests and generates personalized responses
 
-## How It Works
+## 🔍 How It Works
 
 ### 1. Data Processing
 
@@ -45,7 +45,7 @@ The API retrieves relevant messages and generates personalized responses:
 - A carefully crafted prompt instructs the language model to mimic the person's style
 - The AI generates a response that matches the person's unique communication patterns
 
-## Setup Instructions
+## 🚀 Setup Instructions
 
 1. **Environment Setup**
 
@@ -92,7 +92,7 @@ The API retrieves relevant messages and generates personalized responses:
    node index.js
    ```
 
-## API Usage
+## 📡 API Usage
 
 ### Chat Endpoint
 
@@ -113,21 +113,31 @@ Response:
 }
 ```
 
-## Technical Details
+## 🛠️ Technology Stack
 
-- **Language Models**: Primarily uses Google's Gemini 1.5 Pro; Groq's Llama 3.3 70B available as alternative
-- **Vector Database**: Pinecone for efficient semantic search
-- **Embedding Model**: Google's text-embedding-004 optimized for retrieval
-- **Framework**: LangChain for LLM application architecture
-- **Server**: Express.js
+### Backend
 
-## Customization
+- **🔄 Runtime**: Node.js
+- **🌐 Server Framework**: Express.js
+- **🧠 AI/ML**:
+  - **LangChain**: Framework for building LLM applications
+  - **Google Gemini 1.5 Pro**: Primary language model
+  - **Groq/Llama 3.3 70B**: Alternative language model
+  - **Google text-embedding-004**: Embedding model for semantic search
+- **💾 Database**:
+  - **Pinecone**: Vector database for efficient semantic retrieval
+- **📝 Languages**:
+  - **JavaScript/TypeScript**: Core programming languages
+
+### Development Tools
+
+- **📦 Package Management**: npm/pnpm
+- **⚙️ Environment Management**: dotenv
+- **🔄 TypeScript Compiler**: tsx for direct execution of TypeScript files
+
+## ✨ Customization
 
 The personality and response style are controlled through environment variables:
 
 - `NAME`: The name of the person being mimicked
 - `FEATURES`: Description of the person's communication style and personality traits
-
-## License
-
-This project is proprietary and confidential.
