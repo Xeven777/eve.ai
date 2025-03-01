@@ -7,6 +7,7 @@
         "@radix-ui/react-slot": "^1.1.2",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
+        "lenis": "^1.1.22",
         "lucide-react": "^0.476.0",
         "motion": "^12.4.7",
         "react": "^19.0.0",
@@ -400,6 +401,8 @@
     "json-stable-stringify-without-jsonify": ["json-stable-stringify-without-jsonify@1.0.1", "", {}, "sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw=="],
 
     "keyv": ["keyv@4.5.4", "", { "dependencies": { "json-buffer": "3.0.1" } }, "sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw=="],
+
+    "lenis": ["lenis@1.1.22", "", { "peerDependencies": { "@nuxt/kit": ">=3.0.0", "react": ">=17.0.0", "vue": ">=3.0.0" }, "optionalPeers": ["@nuxt/kit", "react", "vue"] }, "sha512-mHNfRSKixzy/QWfo0viB7qfTOqfm5IRTa0e3A1upcsAYFJdVTqUSqifAJccNx5Vtv0FZ5xgqD2MW0VdCjBuiig=="],
 
     "levn": ["levn@0.4.1", "", { "dependencies": { "prelude-ls": "^1.2.1", "type-check": "~0.4.0" } }, "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ=="],
 
