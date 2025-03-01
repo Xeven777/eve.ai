@@ -70,7 +70,7 @@ The API retrieves relevant messages and generates personalized responses:
 
 3. **Export and Process Chat Data**
 
-   Export your WhatsApp chat (see [WhatsApp Export Guide](../docs/whatsapp-export-guide.md) for detailed instructions).
+   Export your WhatsApp chat (see [WhatsApp Export Guide](./whatsapp-export-guide.md) for detailed instructions).
 
    Place your WhatsApp chat export in the api directory as `demochat.txt` and run:
 
@@ -141,3 +141,7 @@ The personality and response style are controlled through environment variables:
 
 - `NAME`: The name of the person being mimicked
 - `FEATURES`: Description of the person's communication style and personality traits
+
+> **Note**: This project is for educational purposes only and should not be used to impersonate or deceive others. Always respect privacy and ethical boundaries when working with personal data.
+
+> This doesn't ensure that the AI will always generate responses that are 100% accurate to the person's style. The AI is trained on a limited dataset and may not always reflect the person's true communication patterns. And the accuracy of the responses may vary based on the quality of the training data and the language model used. Better paid models like Gpt4 or Claude 3.7 will provide more accurate results.
