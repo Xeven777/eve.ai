@@ -2,6 +2,8 @@
 
 Eve.AI is a system that learns communication patterns from WhatsApp chat history and creates a personalized AI chat experience that mimics a specific person's unique communication style, language patterns, and personality.
 
+Youtube video : [EVE-AI](https://www.youtube.com/watch?v=xQorrCjTvJI)
+
 The system consists of three main components:
 
 1. **🧹 Data Processing Pipeline**: Cleanses and structures raw WhatsApp chat exports
