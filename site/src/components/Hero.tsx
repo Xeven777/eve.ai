@@ -35,15 +35,14 @@ const Hero = () => {
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4">
-        <StitchesButton>Get Started</StitchesButton>
+        <a href="https://github.com/Xeven777/eve.ai/" target="_blank" rel="noopener noreferrer">
+          <StitchesButton>Get Started</StitchesButton>
+        </a>
         <Button size="lg" variant="outline">
           Learn More
         </Button>
       </div>
-
-      {/* Decorative elements - hidden on mobile, showing progressively on larger screens */}
-
-      {/* Top floating elements - hidden on mobile, visible from medium screens */}
+      
       <FloatingElement
         depth={0.8}
         className="absolute top-32 left-12 hidden md:block"
